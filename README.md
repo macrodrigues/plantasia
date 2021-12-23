@@ -1,74 +1,28 @@
-# Data analysis
-- Document here the project: plantasia
-- Description: Project Description
-- Data Source:
-- Type of analysis:
+# Plantasia
 
-Please document the project the better you can.
+### Project Description
 
-# Startup the project
+Tkinter GUI to be used as a repository for plants and muchrooms. It helps to optimize the search for species that have homeopathic use.
 
-The initial setup.
+![image](https://user-images.githubusercontent.com/62621924/147284141-995f4628-bd49-4e75-be52-53717efe0554.png)
 
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
+The user can easily look for species, families and properties and customize the GUI as he wants, by adding/removing species.
 
-Unittest test:
-```bash
-make clean install test
-```
+![image](https://user-images.githubusercontent.com/62621924/147284900-1397ff11-e454-41f0-af9d-4a27e718cb57.png)
 
-Check for plantasia in gitlab.com/{group}.
-If your project is not set please add it:
+When choosing the specie, it prompts an image and a widget showing a short description, the properties and the side-effects of it.
 
-- Create a new project on `gitlab.com/{group}/plantasia`
-- Then populate it:
+![image](https://user-images.githubusercontent.com/62621924/147285056-51a70440-2465-4ced-b910-8d270f47e1f0.png)
 
-```bash
-##   e.g. if group is "{group}" and project_name is "plantasia"
-git remote add origin git@github.com:{group}/plantasia.git
-git push -u origin master
-git push -u origin --tags
-```
+To add a new especie, simply click on "New" at the top menu, and the window below will be prompted:
 
-Functionnal test with a script:
+![image](https://user-images.githubusercontent.com/62621924/147285358-1df18ac0-33b8-47c1-ab49-d200625bdd00.png)
 
-```bash
-cd
-mkdir tmp
-cd tmp
-plantasia-run
-```
+### Data
 
-# Install
+The data is saved in a JSON file.
 
-Go to `https://github.com/{group}/plantasia` to see the project, manage issues,
-setup you ssh public key, ...
 
-Create a python3 virtualenv and activate it:
+### Limitations
 
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
-```
-
-Clone the project and install it:
-
-```bash
-git clone git@github.com:{group}/plantasia.git
-cd plantasia
-pip install -r requirements.txt
-make clean install test                # install and test
-```
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-plantasia-run
-```
+There is no executable file yet to be run without using python.
