@@ -22,7 +22,3 @@ To add a new especie, simply click on "New" at the top menu, and the window belo
 
 The data is saved in a JSON file.
 
-
-### Limitations
-
-There is no executable file yet to be run without using python.
